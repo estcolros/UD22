@@ -3,12 +3,12 @@ CREATE DATABASE IF NOT EXISTS `MVC_db`;
 USE `MVC_db`;
 
 --
--- Table structure for table `persona`
+-- Table structure for table `Cliente`
 --
 
-DROP TABLE IF EXISTS `persona`;
+DROP TABLE IF EXISTS `Cliente`;
 
-CREATE TABLE `persona` (
+CREATE TABLE `Cliente` (
   `id` int NOT NULL,
   `nombre` varchar(30) DEFAULT NULL,
   `edad` int DEFAULT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `persona` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `persona`
+-- Dumping data for table `Cliente`
 --
 
 INSERT INTO `persona` VALUES (100,'Jaume Lopez',38,'Gerente',654321000);
