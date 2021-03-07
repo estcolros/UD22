@@ -1,6 +1,6 @@
 
-CREATE DATABASE IF NOT EXISTS `MVC_db`;
-USE `MVC_db`;
+CREATE DATABASE IF NOT EXISTS `UD22`;
+USE `UD22`;
 
 --
 -- Table structure for table `Cliente`

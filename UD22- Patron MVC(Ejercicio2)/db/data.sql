@@ -1,12 +1,6 @@
 
-CREATE DATABASE IF NOT EXISTS `MVC_db`;
-USE `MVC_db`;
-
---
--- Table structure for table `Cliente`
---
-
-DROP TABLE IF EXISTS `Cliente`;
+CREATE DATABASE IF NOT EXISTS `UD22`;
+USE `UD22`;
 
 CREATE TABLE `Cliente` (
   `id` int NOT NULL,
@@ -17,15 +11,14 @@ CREATE TABLE `Cliente` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `Cliente`
---
 
-INSERT INTO `Cliente` VALUES (100,'Jaume Lopez',38,'Gerente',654321000);
-INSERT INTO `Cliente` VALUES (101,'Joan Marsal',38,'Project Manager',654321000);
-INSERT INTO `Cliente` VALUES (102,'Jordi Rubio',25,'Técnico de Sistemas',6654321987);
-INSERT INTO `Cliente` VALUES (103,'Arnau Aladid',23,'Senior Developer',987654321);
-INSERT INTO `Cliente` VALUES (104,'Daniel Sopena',22,'Junior Developer',654321987);
-INSERT INTO `Cliente` VALUES (105,'Luis Martinez',46,'QA Team',654321000);
-INSERT INTO `Cliente` VALUES (106,'Laia fernandez',46,'Agente Comercial',654321000);
+CREATE TABLE `Videos` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`title` varchar(250) DEFAULT NULL,
+	`director` varchar(250) DEFAULT NULL,
+    `cli_id` int(11) DEFAULT NULL,
+	PRIMARY KEY (`id`),
+    CONSTRAINT `Videos_fk` FOREIGN KEY (`Cli_id`) REFERENCES Cliente (`id`)
+);
+
 
