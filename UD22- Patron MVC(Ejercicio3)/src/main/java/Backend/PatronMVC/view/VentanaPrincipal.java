@@ -14,9 +14,9 @@ import Backend.PatronMVC.controller.ProyectoController;
 public class VentanaPrincipal extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
-	public ProyectoController Controller;
-	public AsignadoAController AsignadoAController;
-	private CientificoController ClienteController; // objeto ClienteController que permite la relacion entre esta clase
+//	public ProyectoController Controller;
+//	public AsignadoAController AsignadoAController;
+//	private CientificoController ClienteController; // objeto ClienteController que permite la relacion entre esta clase
 	// y la clase ClienteController
 	private JTextArea areaIntroduccion;
 	private JLabel labelTitulo, labelVideo;
@@ -49,26 +49,23 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		botonBuscarCient.setText("Buscar Cientifico");
 
 		
-		JButton botonRegistrarProyec = new JButton();
+		botonRegistrarProyec = new JButton();
 		botonRegistrarProyec.setText("Registrar Proyecto");
 		botonRegistrarProyec.setBounds(100, 231, 141, 25);
-		getContentPane().add(botonRegistrarProyec);
 		
 		
-		JButton btnBuscarProyecto = new JButton();
+		
+		 btnBuscarProyecto = new JButton();
 		btnBuscarProyecto.setText("Buscar Proyecto");
 		btnBuscarProyecto.setBounds(240, 229, 120, 25);
-		getContentPane().add(btnBuscarProyecto);
 
-		JButton botonRegistrarAsigA = new JButton();
+		 botonRegistrarAsigA = new JButton();
 		botonRegistrarAsigA.setText("Registrar AsignadoA");
 		botonRegistrarAsigA.setBounds(100, 268, 163, 25);
-		getContentPane().add(botonRegistrarAsigA);
 
-		JButton btnBuscarAsignadoa = new JButton();
+		 btnBuscarAsignadoa = new JButton();
 		btnBuscarAsignadoa.setText("Buscar AsignadoA");
 		btnBuscarAsignadoa.setBounds(264, 266, 120, 25);
-		getContentPane().add(btnBuscarAsignadoa);
 		
 		
 		
@@ -104,8 +101,15 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		botonRegistrarAsigA.addActionListener(this);
 		btnBuscarAsignadoa.addActionListener(this);
 		
+		getContentPane().add(botonRegistrarProyec);
 		getContentPane().add(botonBuscarCient);
 		getContentPane().add(botonRegistrarCient);
+		getContentPane().add(btnBuscarProyecto);
+		getContentPane().add(botonRegistrarAsigA);
+		getContentPane().add(btnBuscarAsignadoa);
+
+
+
 
 		getContentPane().add(labelVideo);
 		getContentPane().add(labelTitulo);

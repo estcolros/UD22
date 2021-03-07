@@ -40,7 +40,7 @@ public class AsignadoADao {
 		AsignadoA AsignadoA= new AsignadoA();
 		boolean existe=false;
 		try {
-			String sql= "SELECT * FROM AsignadoA where id = ? ";
+			String sql= "SELECT * FROM AsignadoA where Cientifico = ? ";
 			PreparedStatement consulta = conex.getConnection().prepareStatement(sql);
 			consulta.setString(1, codigo);
 			ResultSet res = consulta.executeQuery();
@@ -71,7 +71,7 @@ public class AsignadoADao {
 		
 		Conexion conex= new Conexion();
 		try{
-			String consulta="UPDATE AsignadoA SET Cientifico= ? ,Proyecto = ?  WHERE id= ? ";
+			String consulta="UPDATE AsignadoA SET Cientifico= ? ,Proyecto = ?  WHERE Cientifico= ? ";
 			PreparedStatement estatuto = conex.getConnection().prepareStatement(consulta);
 			
             estatuto.setString(1, miAsignadoA.getCientifico());
@@ -95,7 +95,7 @@ public class AsignadoADao {
 	{
 		Conexion conex= new Conexion();
 		try {
-			String sql= "DELETE FROM AsignadoA WHERE id='"+codigo+"'";
+			String sql= "DELETE FROM AsignadoA WHERE Cientifico='"+codigo+"'";
 			Statement st = conex.getConnection().createStatement();
 			st.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, " Se ha Eliminado Correctamente","Información",JOptionPane.INFORMATION_MESSAGE);

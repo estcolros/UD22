@@ -18,7 +18,7 @@ public class ProyectoDao {
 		
 		try {
 			Statement st = conex.getConnection().createStatement();
-			String sql= "INSERT INTO Proyectos VALUES ('"+miProyecto.getIdProyecto()+"', '"
+			String sql= "INSERT INTO Proyecto VALUES ('"+miProyecto.getIdProyecto()+"', '"
 					+miProyecto.getNombre()+"', '"+miProyecto.getHoras()+"');";
 			st.executeUpdate(sql);
 			JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
@@ -39,7 +39,7 @@ public class ProyectoDao {
 		Proyecto Proyecto= new Proyecto();
 		boolean existe=false;
 		try {
-			String sql= "SELECT * FROM Proyectos where id = ? ";
+			String sql= "SELECT * FROM Proyecto where Id = ? ";
 			PreparedStatement consulta = conex.getConnection().prepareStatement(sql);
 			consulta.setString(1, codigoProyecto);
 			ResultSet res = consulta.executeQuery();
@@ -68,13 +68,13 @@ public class ProyectoDao {
 		
 		Conexion conex= new Conexion();
 		try{
-			String consulta="UPDATE Proyectos SET id= ? ,nombre = ? , horas=? WHERE id= ? ";
+			String consulta="UPDATE Proyecto SET Id= ? ,Nombre = ? , Horas=? WHERE id= ? ";
 			PreparedStatement estatuto = conex.getConnection().prepareStatement(consulta);
 			
             estatuto.setString(1, miProyecto.getIdProyecto());
             estatuto.setString(2, miProyecto.getNombre());
             estatuto.setInt(3, miProyecto.getHoras());
-            estatuto.setString(5,miProyecto.getIdProyecto());
+            estatuto.setString(4,miProyecto.getIdProyecto());
             estatuto.executeUpdate();
             
           JOptionPane.showMessageDialog(null, " Se ha Modificado Correctamente ","Confirmación",JOptionPane.INFORMATION_MESSAGE);
@@ -93,7 +93,7 @@ public class ProyectoDao {
 	{
 		Conexion conex= new Conexion();
 		try {
-			String sql= "DELETE FROM Proyectos WHERE id='"+codigo+"'";
+			String sql= "DELETE FROM Proyecto WHERE Id='"+codigo+"'";
 			Statement st = conex.getConnection().createStatement();
 			st.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, " Se ha Eliminado Correctamente","Información",JOptionPane.INFORMATION_MESSAGE);
