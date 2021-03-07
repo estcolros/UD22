@@ -39,12 +39,12 @@ public class VentanaRegistro extends JFrame implements ActionListener{
 		botonCancelar.setText("Cancelar");
 
 		labelTitulo = new JLabel();
-		labelTitulo.setText("REGISTRO DE ClienteS");
+		labelTitulo.setText("REGISTRO DE CLIENTES");
 		labelTitulo.setBounds(120, 20, 380, 30);
 		labelTitulo.setFont(new java.awt.Font("Verdana", 1, 18));
 
 		id=new JLabel();
-		id.setText("Codigo");
+		id.setText("Código");
 		id.setBounds(20, 80, 80, 25);
 		getContentPane().add(id);
 		
@@ -58,19 +58,13 @@ public class VentanaRegistro extends JFrame implements ActionListener{
 		apellido.setBounds(290, 80, 80, 25);
 		getContentPane().add(apellido);
 		
-//
-//		Fecha=new JLabel();
-//		Fecha.setText("Fecha");
-//		Fecha.setBounds(290, 160, 80, 25);
-//		getContentPane().add(Fecha);
-		
 		Dni=new JLabel();
-		Dni.setText("Dni");
+		Dni.setText("DNI");
 		Dni.setBounds(290, 120, 80, 25);
 		getContentPane().add(Dni);
 		
 		direccion=new JLabel();
-		direccion.setText("direccion");
+		direccion.setText("Dirección");
 		direccion.setBounds(20, 160, 80, 25);
 		getContentPane().add(direccion);
 		
@@ -85,10 +79,6 @@ public class VentanaRegistro extends JFrame implements ActionListener{
 		textapellido=new JTextField();
 		textapellido.setBounds(353, 80, 80, 25);
 		getContentPane().add(textapellido);
-		
-//		textFecha=new JTextField();
-//		textFecha.setBounds(340, 160, 80, 25);
-//		getContentPane().add(textFecha);
 		
 		textDni=new JTextField();
 		textDni.setBounds(340, 120, 80, 25);

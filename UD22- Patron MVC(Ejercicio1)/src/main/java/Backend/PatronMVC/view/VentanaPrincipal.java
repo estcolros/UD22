@@ -46,7 +46,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 		labelTitulo.setFont(new java.awt.Font("Verdana", 1, 15));
 
 		labelSeleccion = new JLabel();
-		labelSeleccion.setText("Escoja que operacion desea realizar");
+		labelSeleccion.setText("Escoja que operación desea realizar");
 		labelSeleccion.setBounds(75, 240, 250, 25);
 
 		textoIntroduccion = "Esta aplicación presenta un ejemplo práctico del patron "

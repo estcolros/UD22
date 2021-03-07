@@ -1,7 +1,6 @@
 package Backend.PatronMVC.view;
 
 import java.awt.EventQueue;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,9 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import Backend.PatronMVC.controller.AsignadoAController;
 import Backend.PatronMVC.controller.ProyectoController;
-import Backend.PatronMVC.model.dto.Cientifico;
 import Backend.PatronMVC.model.dto.Proyecto;
 
 public class VentanaRegistroProyecto extends JFrame implements ActionListener {
@@ -98,7 +95,6 @@ public class VentanaRegistroProyecto extends JFrame implements ActionListener {
 		getContentPane().setLayout(null);
 
 	}
-
 
 	private void limpiar() 
 	{

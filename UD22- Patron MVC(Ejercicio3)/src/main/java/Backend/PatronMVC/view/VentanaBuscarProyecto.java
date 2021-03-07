@@ -1,6 +1,5 @@
 package Backend.PatronMVC.view;
 
-import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,14 +9,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import Backend.PatronMVC.model.dto.Cientifico;
 import Backend.PatronMVC.model.dto.Proyecto;
-import Backend.PatronMVC.model.service.CientificoServ;
 import Backend.PatronMVC.model.service.ProyectoServ;
-import Backend.PatronMVC.controller.AsignadoAController;
 import Backend.PatronMVC.controller.ProyectoController;
 
-import java.awt.Font;
 
 public class VentanaBuscarProyecto extends JFrame implements ActionListener {
 

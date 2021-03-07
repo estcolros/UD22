@@ -31,9 +31,7 @@ public class ClienteDao
                     +miCliente.getDniCliente()+","
                     +"'"+miCliente.getFechaCliente()+"'"
                     + ");";
-//			String sql= "INSERT INTO Cliente VALUES ('"+miCliente.getIdCliente()+"', '"
-//					+miCliente.getNombreCliente()+"', '"+miCliente.getEdadCliente()+"', '"
-//					+miCliente.getProfesionCliente()+"', '"+miCliente.getTelefonoCliente()+"');";
+
 			st.executeUpdate(sql);
 			JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
 			System.out.println(sql);

@@ -1,14 +1,10 @@
 package Backend.PatronMVC.model.service;
 
 import javax.swing.JOptionPane;
-import javax.swing.JOptionPane;
-
-import Backend.PatronMVC.model.dao.CientificoDao;
 import Backend.PatronMVC.model.dto.Proyecto;
 import Backend.PatronMVC.controller.ProyectoController;
-import Backend.PatronMVC.controller.AsignadoAController;
 import Backend.PatronMVC.model.dao.ProyectoDao;
-import Backend.PatronMVC.model.dto.Proyecto;
+
 
 public class ProyectoServ {
 

@@ -1,9 +1,7 @@
 package Backend.PatronMVC;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import Backend.PatronMVC.controller.CientificoController;
 import Backend.PatronMVC.controller.ProyectoController;
 import Backend.PatronMVC.controller.AsignadoAController;
@@ -57,6 +55,7 @@ public class mainApp extends JFrame {
 	 * Permite instanciar todas las clases con las que trabaja el sistema
 	 */
 	private void iniciar() {
+		
 		/* Se instancian las clases */
 		miVentanaPrincipal = new VentanaPrincipal();
 		
@@ -94,7 +93,6 @@ public class mainApp extends JFrame {
 		miAsignadoAServ.setController(AsignadoAController);
 		
 
-		
 		/* Se establecen relaciones con la clase coordinador */
 		CientificoController.setMiVentanaPrincipal(miVentanaPrincipal);
 		CientificoController.setMiVentanaRegistro(miVentanaRegistroCientifico);
@@ -111,8 +109,6 @@ public class mainApp extends JFrame {
 		AsignadoAController.setMiVentanaRegistroAsignadoA(miVentanaRegistroAsignadoA);
 		AsignadoAController.setMiVentanaBuscarAsignadoA(miAsignadoABuscar);
 		AsignadoAController.setAsignadoAServ(miAsignadoAServ);
-
-	
 		
 		miVentanaPrincipal.setVisible(true);
 	}

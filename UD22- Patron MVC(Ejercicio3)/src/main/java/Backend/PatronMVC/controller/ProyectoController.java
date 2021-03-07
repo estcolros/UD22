@@ -2,10 +2,8 @@ package Backend.PatronMVC.controller;
 
 import Backend.PatronMVC.model.dto.Proyecto;
 import Backend.PatronMVC.model.service.ProyectoServ;
-import Backend.PatronMVC.view.VentanaBuscarAsignadoA;
 import Backend.PatronMVC.view.VentanaBuscarProyecto;
 import Backend.PatronMVC.view.VentanaPrincipal;
-import Backend.PatronMVC.view.VentanaRegistroAsignadoA;
 import Backend.PatronMVC.view.VentanaRegistroProyecto;
 
 public class ProyectoController {

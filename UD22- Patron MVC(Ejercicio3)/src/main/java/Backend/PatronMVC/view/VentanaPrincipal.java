@@ -14,10 +14,7 @@ import Backend.PatronMVC.controller.ProyectoController;
 public class VentanaPrincipal extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
-//	public ProyectoController Controller;
-//	public AsignadoAController AsignadoAController;
-//	private CientificoController ClienteController; // objeto ClienteController que permite la relacion entre esta clase
-	// y la clase ClienteController
+	// objeto ClienteController que permite la relacion entre esta clase y la clase ClienteController
 	private JTextArea areaIntroduccion;
 	private JLabel labelTitulo, labelVideo;
 	private JButton botonRegistrarCient, botonRegistrarProyec, btnBuscarProyecto, btnBuscarAsignadoa,
@@ -108,9 +105,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		getContentPane().add(botonRegistrarAsigA);
 		getContentPane().add(btnBuscarAsignadoa);
 
-
-
-
 		getContentPane().add(labelVideo);
 		getContentPane().add(labelTitulo);
 		getContentPane().add(areaIntroduccion);
@@ -120,8 +114,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		setLocationRelativeTo(null);
 		setResizable(false);
 		getContentPane().setLayout(null);
-
-		
 
 	}
 

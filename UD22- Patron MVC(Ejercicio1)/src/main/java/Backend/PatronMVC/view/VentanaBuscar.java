@@ -56,7 +56,7 @@ public class VentanaBuscar  extends JFrame implements ActionListener {
 		labelTitulo.setFont(new java.awt.Font("Verdana", 1, 18));
 
 		id=new JLabel();
-		id.setText("Codigo");
+		id.setText("Código");
 		id.setBounds(20, 80, 80, 25);
 		getContentPane().add(id);
 		
@@ -71,12 +71,12 @@ public class VentanaBuscar  extends JFrame implements ActionListener {
 		getContentPane().add(Apellido);
 		
 		direccion=new JLabel();
-		direccion.setText("Direccion");
+		direccion.setText("Dirección");
 		direccion.setBounds(20, 160, 80, 25);
 		getContentPane().add(direccion);
 		
 		Dni=new JLabel();
-		Dni.setText("Dni");
+		Dni.setText("DNI");
 		Dni.setBounds(290, 120, 80, 25);
 		getContentPane().add(Dni);
 		

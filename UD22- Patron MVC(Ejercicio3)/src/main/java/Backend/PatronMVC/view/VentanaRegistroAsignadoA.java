@@ -39,7 +39,7 @@ public class VentanaRegistroAsignadoA extends JFrame implements ActionListener{
 		botonCancelar.setText("Cancelar");
 
 		labelTitulo = new JLabel();
-		labelTitulo.setText("REGISTRO DE AsignadoAS");
+		labelTitulo.setText("REGISTRO DE ASIGNADOS");
 		labelTitulo.setBounds(120, 20, 380, 30);
 		labelTitulo.setFont(new java.awt.Font("Verdana", 1, 18));
 

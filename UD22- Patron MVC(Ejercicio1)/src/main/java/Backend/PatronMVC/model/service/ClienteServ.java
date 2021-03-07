@@ -33,7 +33,7 @@ public class ClienteServ {
 			miClienteDao = new ClienteDao();
 			miClienteDao.registrarCliente(miCliente);						
 		}else {
-			JOptionPane.showMessageDialog(null,"El documento del Cliente debe ser mas de 3 digitos","Advertencia",JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null,"El documento del cliente debe ser más de 3 dígitos","Advertencia",JOptionPane.WARNING_MESSAGE);
 			
 		}
 		
@@ -50,7 +50,7 @@ public class ClienteServ {
 				consultaCliente=true;
 				return miClienteDao.buscarCliente(codigo);						
 			}else{
-				JOptionPane.showMessageDialog(null,"El documento del Cliente debe ser mas de 3 digitos","Advertencia",JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(null,"El documento del cliente debe ser más de 3 dígitos","Advertencia",JOptionPane.WARNING_MESSAGE);
 				consultaCliente=false;
 			}
 			
@@ -73,7 +73,7 @@ public class ClienteServ {
 			miClienteDao.modificarCliente(miCliente);	
 			modificaCliente=true;
 		}else{
-			JOptionPane.showMessageDialog(null,"El nombre del Cliente debe ser mayor a 5 digitos","Advertencia",JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null,"El nombre del cliente debe ser mayor a 5 digitos","Advertencia",JOptionPane.WARNING_MESSAGE);
 			modificaCliente=false;
 		}
 	}

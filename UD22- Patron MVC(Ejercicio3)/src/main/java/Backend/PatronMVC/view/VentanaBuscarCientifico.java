@@ -92,7 +92,6 @@ public class VentanaBuscarCientifico  extends JFrame implements ActionListener {
 		setResizable(false);
 		getContentPane().setLayout(null);
 		
-		
 
 	}
 

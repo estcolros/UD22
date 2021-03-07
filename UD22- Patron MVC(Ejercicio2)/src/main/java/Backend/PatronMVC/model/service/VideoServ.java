@@ -25,7 +25,7 @@ public class VideoServ {
 			miVideoDao = new VideoDao();
 			miVideoDao.registrarVideo(miVideo);
 		} else {
-			JOptionPane.showMessageDialog(null, "El nombre del Video debe ser mayor a 3 digitos", "Advertencia",
+			JOptionPane.showMessageDialog(null, "El nombre del video debe ser mayor a 3 dígitos", "Advertencia",
 			JOptionPane.WARNING_MESSAGE);
 		}
 
@@ -42,7 +42,7 @@ public class VideoServ {
 				consultaVideo = true;
 				return miVideoDao.buscarVideo(codigo);
 			} else {
-				JOptionPane.showMessageDialog(null, "El codigo del Video debe ser mas de 0 digitos", "Advertencia",
+				JOptionPane.showMessageDialog(null, "El código del video debe ser más de 0 digitos", "Advertencia",
 						JOptionPane.WARNING_MESSAGE);
 				consultaVideo = false;
 			}
@@ -67,7 +67,7 @@ public class VideoServ {
 			modificaVideo = true;
 		} else {
 			if (miVideo.getTitle().length() <= 3) {
-				JOptionPane.showMessageDialog(null, "El nombre del Video debe ser mayor a 3 digitos", "Advertencia",
+				JOptionPane.showMessageDialog(null, "El nombre del video debe ser mayor a 3 dígitos", "Advertencia",
 						JOptionPane.WARNING_MESSAGE);
 				modificaVideo = false;
 			}
