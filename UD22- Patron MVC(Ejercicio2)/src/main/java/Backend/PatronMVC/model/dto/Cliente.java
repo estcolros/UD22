@@ -59,7 +59,6 @@ public class Cliente {
 	}
 	public void setFechaCliente() {
 		LocalDate actual = LocalDate.now();
-
 		this.fechaCliente =actual+"";
 	}
 	
