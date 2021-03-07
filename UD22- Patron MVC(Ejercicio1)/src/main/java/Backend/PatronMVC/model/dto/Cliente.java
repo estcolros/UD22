@@ -1,5 +1,7 @@
 package Backend.PatronMVC.model.dto;
 
+import java.time.LocalDate;
+
 public class Cliente {
 	
 	private Integer idCliente;
@@ -58,7 +60,9 @@ public class Cliente {
 		return fechaCliente;
 	}
 	public void setFechaCliente() {
-		this.fechaCliente = "2021-03-06";
+		LocalDate actual = LocalDate.now();
+
+		this.fechaCliente =actual+"";
 	}
 	
 
